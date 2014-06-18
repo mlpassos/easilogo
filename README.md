@@ -1,4 +1,4 @@
-easilogo
+EASiLOGO
 ========
 
 Read the whole story at Instructables:  http://www.instructables.com/id/Etch-a-Sketch-LOGO-EASiLOGO/
