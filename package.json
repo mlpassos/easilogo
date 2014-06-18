@@ -1,0 +1,10 @@
+{
+  "name": "easilogo",
+  "description": "EasiLogo App",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "serialport": "1.4.0"
+  }
+}

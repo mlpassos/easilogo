@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <!-- SEO -->
+      <meta name="robots" content="noindex,nofollow">
+      <meta name="author" content="Márcio Passos/Graham Toal - marciopassos.com/gtoal.com" /> 
+      <meta name="description" content="EasILogo"/>
+  	<!-- SEO -->
+  <title>EASI LOGO</title>
+  <link rel="stylesheet" type="text/css" href="css/home.css" />
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <form id="input" action="/" method="post" onSubmit="this.img.value = canvas.toDataURL().replace('data:image/png;base64,','')">
+      <div id="oldcode"></div>
+      <div class="eas-box">
+        <div class="eas-screen">
+          <div id="textOutput"></div>
+          <div id="turtle">
+            <embed width="10" height="10" id='sprite' src="turtle-small.png"/>
+          </div>
+          <canvas id="canvas" width="500" height="400">
+           Seu navegador não suporta o elemento "canvas". Atualize para a versão mais recente e volte aqui... =)
+          </canvas>
+        </div>
+        <div class="controls">
+        <div class="left">
+          <div class="ball-left"></div>
+        </div>
+        <div class="right">
+          <div class="ball-right"></div>
+        </div>
+        </div>
+      </div>
+    <!--<aside class="examples">
+      <div class="example">
+        to tree :size<br>
+        if :size < 5 [forward :size back :size stop]<br>
+        forward :size/3<br>
+        left 30 tree :size*2/3 right 30<br>
+        forward :size/6<br>
+        right 25 tree :size/2 left 25<br>
+        forward :size/3<br>
+        right 25 tree :size/2 left 25<br>
+        forward :size/6<br>
+        back :size<br>
+        end<br>
+        tree 150
+      </div>
+      <div class="example">
+        reset<br>
+        to polygon :length :sides<br>
+        repeat :sides [fw :length rt 360/:sides]<br>
+        end<br>
+        polygon 50 6
+      </div>
+      <div class="example">
+        to star :size<br>
+        repeat 5 [fw :size rt 144]<br>
+        end<br>
+        star 250
+      </div>
+      <div class="example">
+        to square :size<br>
+        repeat 4 [fw :size rt 90]<br>
+        end<br>
+        square 200
+      </div>
+    </aside>-->
+      <div class="cli">
+        <textarea name="code" id="code" class="code" placeholder="Put your code here...">to square
+  repeat 4 [
+    forward 100
+    right 90
+  ]
+end
+square
+</textarea>
+        <button id="run"class="btn-exec">Draw</button>
+        <!-- <button id="sendHardware" class="btn-exec">Run</button> -->
+        <!-- <button id="stop" class="btn-exec">Stop</button> -->
+        <!-- <button id="clear" class="btn-exec">Clear</button> -->
+      </div>
+    </form>
+    <div class="examples">
+      <div class="example">
+        <img class="image" src="/images/80x80.gif" alt="Program Image">
+      </div>
+      <div class="example">
+        <img class="image" src="/images/80x80.gif" alt="Program Image">
+      </div>
+      <div class="example">
+        <img class="image" src="/images/80x80.gif" alt="Program Image">
+      </div>
+      <div class="example">
+        <img class="image" src="/images/80x80.gif" alt="Program Image">
+      </div>
+      <div class="example">
+        <img class="image" src="/images/80x80.gif" alt="Program Image">
+      </div>
+      <div class="example">
+        <img class="image" src="/images/80x80.gif" alt="Program  
+      </div>
+      <div class="example">
+        <img class="image" src="/images/80x80.gif" alt="Program Image">
+      </div>
+      <div class="example">
+        <img class="image" src="/images/80x80.gif" alt="Program Image">
+      </div>      
+    </div>
+  </div>
+  <!-- JAVASCRIPT -->
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/turtle.js"></script>
+  <script src="js/parser.js"></script>
+  <script src="js/logo.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/easilogo.js"></script>
+</body>
+</html>
